@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeInspire | Мотивация для разработчиков</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="logo-icon">{ }</span>
+            <span>CodeInspire</span>
+        </div>
+        <div class="header-actions">
+            <button class="favorites-btn" id="favoritesBtn">
+                <span>❤️</span> <span class="favorites-text">Избранные</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle">
+                ☰ <span class="menu-text">Меню</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">Категории</h2>
+            <button class="close-sidebar" id="closeSidebar">×</button>
+        </div>
+        <ul class="category-list">
+            <li class="category-item active" data-category="advice">
+                <span class="category-icon">💡</span>
+                Советы программистам
+            </li>
+            <li class="category-item" data-category="quotes">
+                <span class="category-icon">💬</span>
+                Цитаты о программировании
+            </li>
+            <li class="category-item" data-category="motivation">
+                <span class="category-icon">🚀</span>
+                Мотивационные цитаты
+            </li>
+            <li class="category-item" data-category="facts">
+                <span class="category-icon">📚</span>
+                Интересные факты
+            </li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent">
+        <!-- Cards will be dynamically inserted here -->
+    </div>
+
+    <!-- Favorites Page -->
+    <div class="favorites-page" id="favoritesPage">
+        <div class="page-header">
+            <button class="back-btn" id="backBtn">← Назад</button>
+            <h1 class="page-title">Избранные</h1>
+        </div>
+        <div id="favoritesContainer">
+            <!-- Favorite items will be inserted here -->
+        </div>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
